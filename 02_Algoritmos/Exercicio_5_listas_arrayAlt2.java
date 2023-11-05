@@ -1,5 +1,4 @@
 // Solução usando array/listas
-// Mostrar apenas os números pares da lista
 
 import java.util.ArrayList;
 import java.util.List;
