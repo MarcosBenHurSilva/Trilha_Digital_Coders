@@ -4,7 +4,7 @@ public class Exercicio_7 {
     private double saldo;
 
     public Exercicio_7() {
-        saldo = 0.0;
+        saldo = 0.00;
     }
 
     public double getSaldo() {
