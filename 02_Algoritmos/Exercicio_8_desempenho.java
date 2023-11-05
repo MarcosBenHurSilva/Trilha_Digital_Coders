@@ -1,1 +1,1 @@
-// Aula apenas teórica.
+// Aula somente teórica.

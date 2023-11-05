@@ -1,3 +1,1 @@
-public class Exercicio_9_dicas {
-    
-}
+// Aula apenas teórica.
