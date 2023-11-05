@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TerceiroExercicio {
+public class Exercicio_3 {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Digite seu nome: ");
