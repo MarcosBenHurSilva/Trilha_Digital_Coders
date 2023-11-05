@@ -8,16 +8,17 @@ public class TerceiroExercicio {
             System.out.print("Digite a hora atual: ");
             int hora = scanner.nextInt();
 
-            if (hora > 0 && hora < 12) {
-                String msg = "Bom Dia " ;
-                System.out.println(msg + nome);
+            String saudacao;
+
+            if (hora >= 0 && hora < 12) {
+                saudacao = "Bom Dia";
             } else if (hora >= 12 && hora < 18) {
-                String msg = "Boa tarde " ;
-                System.out.println(msg + nome);
+                saudacao = "Boa Tarde";
             } else {
-                String msg = "Boa noite ";
-                System.out.println(msg + nome);
+                saudacao = "Boa Noite";
             }
+
+            System.out.println(saudacao + " " + nome + "!");
         }
-    } 
+    }
 }
