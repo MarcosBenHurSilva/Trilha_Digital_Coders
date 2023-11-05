@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Exercicio_7 {
@@ -14,7 +15,7 @@ public class Exercicio_7 {
     public void depositar(double valor) {
         if (valor > 0) {
             saldo += valor;
-            System.out.println("Depósito de " + valor + " efetuado.");
+            System.out.println("Depósito de " + formatarValor(valor) + " efetuado.");
         } else {
             System.out.println("Valor de depósito inválido. Digite um valor positivo.");
         }
@@ -23,12 +24,16 @@ public class Exercicio_7 {
     public void sacar(double valor) {
         if (valor > 0 && valor <= saldo) {
             saldo -= valor;
-            System.out.println("Saque de " + valor + " efetuado.");
+            System.out.println("Saque de " + formatarValor(valor) + " efetuado.");
         } else {
             System.out.println("Saque não permitido, saldo insuficiente.");
         }
     }
 
+    private String formatarValor(double valor) {
+        DecimalFormat formato = new DecimalFormat("#0.00");
+        return formato.format(valor);
+    }
     public static void main(String[] args) {
         Exercicio_7 conta = new Exercicio_7();
         Scanner scanner = new Scanner(System.in);

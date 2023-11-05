@@ -1,3 +1,3 @@
 # Trilha_Digital_Coders
 
-auka git: completa
+Exercicios e exemplos feitos em Java
