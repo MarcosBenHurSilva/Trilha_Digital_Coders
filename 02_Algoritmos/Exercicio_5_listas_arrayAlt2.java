@@ -25,10 +25,15 @@ public class Exercicio_5_listas_arrayAlt2 {
         }
         System.out.println("]");
 
-        System.out.print("Números pares na lista: [");
+        System.out.print("[");
         for (int i = 0; i < numerosDivisiveis.size(); i++) {
             if (numerosDivisiveis.get(i) % 2 == 0) {
-                System.out.print(numerosDivisiveis.get(i));
+                System.out.print(numerosDivisiveis.get(i) + ", " + "item: " +  (i + 1) + ", é par");
+                if (i < numerosDivisiveis.size() - 1) {
+                    System.out.print(", "); // Adiciona vírgula apenas se não for o último número
+                }
+            } else {
+                System.out.print(numerosDivisiveis.get(i) + ", " + "item: " +  (i + 1) + ", é impar");
                 if (i < numerosDivisiveis.size() - 1) {
                     System.out.print(", "); // Adiciona vírgula apenas se não for o último número
                 }
