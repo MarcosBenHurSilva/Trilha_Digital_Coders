@@ -6,21 +6,17 @@ public class Exercicio_4_repeticao2 {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             int soma = 0;
-            int i;
-            int num = 0;
+            int iteracao = 0;
 
-            for (i = 0; soma < 100; i++) {
+            while (soma < 100) {
                 System.out.print("Digite um número: ");
-                num = scanner.nextInt();
+                int num = scanner.nextInt();
                 soma += num;
-                System.out.println("iteração: " + i);
+                iteracao++;
                 System.out.println("Soma parcial: " + soma);
-                System.out.println("num: " + num);
             }
-            System.out.println("iteração: " + i);
+            System.out.println("Número de iterações: " + iteracao);
             System.out.println("Soma final: " + soma);
-            System.out.println("num: " + num);
-            scanner.close();
         }
     }
 }
