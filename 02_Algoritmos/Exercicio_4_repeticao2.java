@@ -1,5 +1,6 @@
+//Num outro exemplo, agora com código, vamos pedir para o usuário digitar numeros até que a soma
+//seja igual ou maior a 100, e depois  mostrar a soma.
 import java.util.Scanner;
-
 
 public class Exercicio_4_repeticao2 {
     public static void main(String[] args) {
