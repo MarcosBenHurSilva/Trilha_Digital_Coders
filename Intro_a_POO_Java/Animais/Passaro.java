@@ -10,7 +10,7 @@ public class Passaro extends Animal{
 
     @Override
     public void soar(){
-        System.out.println("PIU PIU");
+        System.out.println("PIU PIU!!");
     }
 
 }

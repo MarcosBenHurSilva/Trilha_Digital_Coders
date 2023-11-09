@@ -16,6 +16,6 @@ public class Gato extends Animal{
 
     @Override
     public void soar(){
-        System.out.println("MIAU MIAU");
+        System.out.println("MIAU MIAU!!");
     }
 }

@@ -1,6 +1,6 @@
 package Intro_a_POO_Java.Animais;
 
-public class Animal {
+public abstract class Animal {
     
     protected String nome;
     protected String cor;
@@ -53,7 +53,5 @@ public class Animal {
 
     public void dormir(){}
 
-    public void soar(){
-        System.out.println(" cri cri ");
-    }
+    public abstract void soar();
 }

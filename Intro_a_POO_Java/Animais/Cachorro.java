@@ -117,7 +117,7 @@ public class Cachorro extends Animal{
 
     @Override
     public void soar(){
-        System.out.println("AU AU");
+        System.out.println("AU AU!!");
     }
 
 }
