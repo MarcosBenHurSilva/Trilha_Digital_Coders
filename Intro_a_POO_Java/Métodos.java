@@ -15,6 +15,11 @@ public class Métodos {
 
         cachorro1.comer(); // método vazio
         cachorro1.latir();
+        cachorro1.pegar(); // não imprime nada
         System.out.println(cachorro1.nome + " pegou uma " + cachorro1.pegar()); // imprime o retorno do método
+        
+        System.out.println(cachorro1.nome + " está " + cachorro1.interagir("carinho"));
+        System.out.println(cachorro1.nome + " está " + cachorro1.interagir("vai dormir"));
+        System.out.println(cachorro1.nome + " está " + cachorro1.interagir("nada"));
     }
 }
