@@ -20,10 +20,11 @@ public class Cachorro {
     private String estadoDeEspirito;
     
     // construtores
+    // construtor padrão
     public Cachorro (){
 
     }
-
+    // construtores adicionados
     public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito){
         this.nome = nome;
         this.cor = cor;
