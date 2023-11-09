@@ -8,4 +8,15 @@ public class Cachorro {
     public double peso;
     public int tamanhoDoRabo;
 
+    public void comer(){
+       
+    }
+
+    public void latir(){
+        System.out.println("AU AU");
+    }
+
+    public String pegar(){
+        return "Bolinha";
+    }
 }
