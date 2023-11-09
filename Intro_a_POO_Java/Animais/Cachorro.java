@@ -1,8 +1,7 @@
 package Intro_a_POO_Java.Animais;
 
-public class Cachorro {
+public class Cachorro extends Animal{
     // atributos
-
     // public não precisa de get e set
     // public String nome;
     // public String cor;
@@ -10,23 +9,18 @@ public class Cachorro {
     // public double peso;
     // public int tamanhoDoRabo;
     // public String estadoDeEspirito;
-
     //private precisa de get e set
     static int numeroDeCachorros;
-    private String nome;
-    private String cor;
-    private int altura;
-    private double peso;
     private int tamanhoDoRabo;
-    private String estadoDeEspirito;
-    
-    // construtores
-    // construtor padrão
-    public Cachorro (){
 
-    }
+
     // construtores adicionados
+    public Cachorro(String nome, String cor, double peso){
+        super(nome, cor, peso);
+    }
+    
     public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito){
+        super(nome, cor, peso);
         this.nome = nome;
         this.cor = cor;
         this.altura = altura;
@@ -73,27 +67,16 @@ public class Cachorro {
         this.tamanhoDoRabo = tamanhoDoRabo;
     }
 
-    // public String getEstadoDeEspirito(){
-    //     return this.estadoDeEspirito;
+    public String getEstadoDeEspirito(){
+        return this.estadoDeEspirito;
+    }
+
+    // public static int getNumeroDeCachorros(){
+    //     return numeroDeCachorros;
     // }
-    // public void setEstadoDeEspirito(String estadoDeEspirito){
-    //     this.estadoDeEspirito = estadoDeEspirito;
+    // public static void setNumeroDeCachorros(int numeroDeCachorros){
+    //     Cachorro.numeroDeCachorros = numeroDeCachorros;
     // }
-
-    public static int getNumeroDeCachorros(){
-        return numeroDeCachorros;
-    }
-    public static void setNumeroDeCachorros(int numeroDeCachorros){
-        Cachorro.numeroDeCachorros = numeroDeCachorros;
-    }
-
-    public void comer(){
-       
-    }
-
-    public void soar(){
-        System.out.println("AU AU");
-    }
 
     public String pegar(){
         return "bolinha";
@@ -130,6 +113,11 @@ public class Cachorro {
         return "Cachorro{" +
                 "nome='" + nome + '\'' + 
                 '}';
+    }
+
+    @Override
+    public void soar(){
+        System.out.println("AU AU");
     }
 
 }
