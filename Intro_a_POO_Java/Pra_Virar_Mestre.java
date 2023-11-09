@@ -22,11 +22,11 @@ public class Pra_Virar_Mestre {
         /*petshop.darBanho(cachorro1);
         System.out.println(cachorro1.getNome() + " está " + cachorro1.getEstadoDeEspirito());*/
 
-        int inteiro; // int, long, byte default = 0;
-        float $$; // float e double default = 0.0;
-        boolean $87; // boolean default é false;
-        char ch; // char default é vazio;
-        String teste; // valor default de qualquer objeto é null;
+        //int inteiro; // int, long, byte default = 0;
+        //float $$; // float e double default = 0.0;
+        //boolean $87; // boolean default é false;
+        //char ch; // char default é vazio;
+        //String teste; // valor default de qualquer objeto é null;
 
         double d = 5.5d;
         float f = 3.00f;
