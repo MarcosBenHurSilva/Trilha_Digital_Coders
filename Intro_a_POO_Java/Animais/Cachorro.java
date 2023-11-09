@@ -22,13 +22,28 @@ public class Cachorro {
     }
 
     public String interagir(String acao){
-        if (acao.equals("carinho")){
-            this.estadoDeEspirito = "feliz!:D";            
-        } else if(acao.equals("vai dormir")){
-            this.estadoDeEspirito = "bravo!>:(";
-        } else {
-            this.estadoDeEspirito = "neutro!:p";
+        
+        switch (acao) {
+            case "carinho": this.estadoDeEspirito = "feliz";
+                break;
+            case "vai dormir": this.estadoDeEspirito = "bravo";
+                break;
+            case "pisar na patinha": this.estadoDeEspirito = "triste";
+                break;
+            default: this.estadoDeEspirito = "neutro";
+                break;
         }
-        return estadoDeEspirito;
+        return this.estadoDeEspirito;
+        
+        // if (acao.equals("carinho")){
+        //     this.estadoDeEspirito = "feliz!:D";            
+        // } else if(acao.equals("vai dormir")){
+        //     this.estadoDeEspirito = "bravo!>:(";
+        // } else if(acao.equals("pisar na patinha")){
+        //     this.estadoDeEspirito = "triste";
+        // }else {
+        //     this.estadoDeEspirito = "neutro!:p";
+        // }
+        // return estadoDeEspirito;
     }
 }
