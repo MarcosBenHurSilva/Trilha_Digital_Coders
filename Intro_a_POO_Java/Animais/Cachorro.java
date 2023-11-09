@@ -12,6 +12,7 @@ public class Cachorro {
     // public String estadoDeEspirito;
 
     //private precisa de get e set
+    static int numeroDeCachorros;
     private String nome;
     private String cor;
     private int altura;
@@ -32,6 +33,8 @@ public class Cachorro {
         this.peso = peso;
         this.tamanhoDoRabo = tamanhoDoRabo;
         this.estadoDeEspirito = estadoDeEspirito;
+
+        numeroDeCachorros ++;
     }
 
     // métodos
@@ -70,11 +73,18 @@ public class Cachorro {
         this.tamanhoDoRabo = tamanhoDoRabo;
     }
 
-    public String getEstadoDeEspirito(){
-        return this.estadoDeEspirito;
+    // public String getEstadoDeEspirito(){
+    //     return this.estadoDeEspirito;
+    // }
+    // public void setEstadoDeEspirito(String estadoDeEspirito){
+    //     this.estadoDeEspirito = estadoDeEspirito;
+    // }
+
+    public static int getNumeroDeCachorros(){
+        return numeroDeCachorros;
     }
-    public void setEstadoDeEspirito(String estadoDeEspirito){
-        this.estadoDeEspirito = estadoDeEspirito;
+    public static void setNumeroDeCachorros(int numeroDeCachorros){
+        Cachorro.numeroDeCachorros = numeroDeCachorros;
     }
 
     public void comer(){
@@ -114,4 +124,12 @@ public class Cachorro {
         // }
         // return estadoDeEspirito;
     }
+
+    @Override
+    public String toString(){
+        return "Cachorro{" +
+                "nome='" + nome + '\'' + 
+                '}';
+    }
+
 }
