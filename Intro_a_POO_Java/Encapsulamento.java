@@ -6,6 +6,7 @@ public class Encapsulamento {
     public static void main(String[] args) {
         
         Cachorro cachorro1 = new Cachorro();
+        Cachorro cachorro2 = new Cachorro("Kika", "Marrom", 25, 15, 3, "nada");
 
         cachorro1.setNome("Tobi");
         cachorro1.setCor("Preto");
@@ -22,5 +23,8 @@ public class Encapsulamento {
         System.out.println(cachorro1.getNome() + " está " + cachorro1.interagir("vai dormir"));
         System.out.println(cachorro1.getNome() + " está " + cachorro1.interagir("pisar na patinha"));
         System.out.println(cachorro1.getNome() + " está " + cachorro1.interagir("nada"));
+        System.out.println("----------------------------------------------------");
+        System.out.println(cachorro2.getNome() + " pegou uma " + cachorro1.pegar()); // imprime o retorno do método
+        System.out.println(cachorro2.getNome() + " está " + cachorro2.interagir("nada"));
     }
 }

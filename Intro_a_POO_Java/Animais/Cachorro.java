@@ -1,7 +1,17 @@
 package Intro_a_POO_Java.Animais;
 
 public class Cachorro {
+    // atributos
 
+    // public não precisa de get e set
+    // public String nome;
+    // public String cor;
+    // public int altura;
+    // public double peso;
+    // public int tamanhoDoRabo;
+    // public String estadoDeEspirito;
+
+    //private precisa de get e set
     private String nome;
     private String cor;
     private int altura;
@@ -9,6 +19,21 @@ public class Cachorro {
     private int tamanhoDoRabo;
     private String estadoDeEspirito;
     
+    // construtores
+    public Cachorro (){
+
+    }
+
+    public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito){
+        this.nome = nome;
+        this.cor = cor;
+        this.altura = altura;
+        this.peso = peso;
+        this.tamanhoDoRabo = tamanhoDoRabo;
+        this.estadoDeEspirito = estadoDeEspirito;
+    }
+
+    // métodos
     public String getNome(){
         return this.nome;
     }
