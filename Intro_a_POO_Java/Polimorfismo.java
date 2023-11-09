@@ -12,21 +12,21 @@ public class Polimorfismo {
         Gato gato1 = new Gato("Felix", "Branco", 4.5);
         Animal gato2 = new Gato("Garfield", "Laranja", 8.5);
         Passaro passaro1 = new Passaro("Piu", "Verde", 5.1);
-        // Petshop petshop = new Petshop();
+        Petshop petshop = new Petshop();
 
         cachorro1.soar();
         gato2.soar();
         passaro1.soar();
-        // petshop.darBanho(cachorro1);
-        // System.out.println(cachorro1.getNome() + " está " + cachorro1.getEstadoDeEspirito());
+        petshop.darBanho(cachorro1);
+        System.out.println(cachorro1.getNome() + " está " + cachorro1.getEstadoDeEspirito());
 
-        // petshop.darBanho(gato1);
-        // System.out.println(gato1.getNome() + " está " + gato1.getEstadoDeEspirito());
+        petshop.darBanho(gato1);
+        System.out.println(gato1.getNome() + " está " + gato1.getEstadoDeEspirito());
 
-        // petshop.tosar(cachorro1);
-        // System.out.println(cachorro1.getNome() + " está " + cachorro1.getEstadoDeEspirito());
+        petshop.tosar(cachorro1);
+        System.out.println(cachorro1.getNome() + " está " + cachorro1.getEstadoDeEspirito());
 
-        // petshop.deixarNoHotel(passaro1);
-        // System.out.println(passaro1.getNome() + " está " + passaro1.getEstadoDeEspirito());
+        petshop.deixarNoHotel(passaro1);
+        System.out.println(passaro1.getNome() + " está " + passaro1.getEstadoDeEspirito());
     }
 }
